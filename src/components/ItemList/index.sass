@@ -1,0 +1,27 @@
+.itemlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: blue;
+  padding: 20px;
+}
+
+.pagetransition-enter.itemlist {
+  opacity: 0.5;
+  transition: all .3s ease-in;
+}
+
+.pagetransition-enter.pagetransition-enter-active.itemlist {
+  opacity: 1;
+}
+
+.pagetransition-leave.itemlist {
+  opacity: 1;
+  transition: all .3s ease-in;
+}
+
+.pagetransition-leave.pagetransition-leave-active.itemlist {
+  opacity: 0.5;
+}

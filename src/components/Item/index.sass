@@ -1,0 +1,29 @@
+.item {
+  background: red;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.pagetransition-enter .item {
+  opacity: 0.01;
+  transform: scale(0.5, 0.5) translate(0, -100px);
+  transition: all .3s ease-out;
+}
+
+.pagetransition-enter.pagetransition-enter-active .item {
+  opacity: 1;
+  transform: scale(1, 1) translate(0, 0);
+}
+
+.pagetransition-leave .item {
+  opacity: 1;
+  transform: scale(1, 1) translate(0, 0);
+  transition: all .2s ease-in;
+}
+
+.pagetransition-leave.pagetransition-leave-active .item {
+  opacity: 0.01;
+  transform: scale(0.5, 0.5) translate(0, -100px);
+}
+
