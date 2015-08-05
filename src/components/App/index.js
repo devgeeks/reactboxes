@@ -1,4 +1,4 @@
-var React = require('react');
+var React = require('react/addons');
 var Router = require('react-router');
 var { RouteHandler } = Router;
 var TimeoutTransitionGroup = require('timeout-transition-group');
@@ -17,8 +17,7 @@ var App = React.createClass({
     return (
       <div className='app'>
         <TimeoutTransitionGroup
-            enterTimeout={ 300 }
-            leaveTimeout={ 300 }
+            enterTimeout={ 300 } leaveTimeout={ 300 }
             transitionName='pagetransition'>
           <RouteHandler key={ name } />
         </TimeoutTransitionGroup>
